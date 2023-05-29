@@ -1,6 +1,7 @@
 import { faBagShopping, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import { Link} from "react-router-dom"
 import author from '~/assets/img/author/Rectangle55.jpg';
 import Exclude from '~/assets/img/Exclude.png';
 import coffee_image1 from '~/assets/img/coffee_image1.jpg';
@@ -21,10 +22,10 @@ function Header(props) {
                                     <div className="item__navbar-center col l-9">
                                         <div className="row">
                                             <div className="item__navbar-content active">
-                                                <a href="#header">Trang Chủ</a>
+                                                <Link to="/">Trang Chủ</Link>
                                             </div>
                                             <div className="item__navbar-content">
-                                                <a href="#menu__drink">Thực đơn</a>
+                                                <Link to="order" >Thực đơn</Link>
                                             </div>
                                             <div className="item__navbar-content item__navbar-logo">
                                                 <a href="#header">
@@ -32,10 +33,10 @@ function Header(props) {
                                                 </a>
                                             </div>
                                             <div className="item__navbar-content">
-                                                <a href="#user">Ưu Đãi</a>
+                                                <Link to="product">Ưu Đãi</Link>
                                             </div>
                                             <div className="item__navbar-content">
-                                                <a href="#author"> Về chúng tôi</a>
+                                                <Link to="about"> Về chúng tôi</Link>
                                             </div>
                                         </div>
                                     </div>
