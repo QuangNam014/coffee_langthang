@@ -1,10 +1,11 @@
 import React from 'react';
 import SpacShop from './SpacShop';
+import { Outlet } from 'react-router-dom';
 
-function Container(props) {
+function Container({ children }) {
     return (
         <main>
-            <SpacShop />
+            <Outlet />
         </main>
     );
 }
